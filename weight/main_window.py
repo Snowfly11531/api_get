@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import *
 from weight.main_window_ui import *
-from weight.test import *
+from weight.parameter_frame import *
 class Main_Window(QtWidgets.QWidget,Ui_Form):
     def __init__(self):
         super(QtWidgets.QWidget,self).__init__()
