@@ -9,7 +9,7 @@ class Main_Window(QtWidgets.QWidget,Ui_Form):
         self.frameCount=0
         self.setupUi(self)
     def addframe(self):
-        test_frame = Test_Frame(self.scrollAreaWidgetContents)
+        test_frame = Parameter_Frame(self.scrollAreaWidgetContents)
         self.frameHeight = test_frame.geometry().height()
         top=self.frameHeight*self.frameCount
         test_frame.setGeometry(QtCore.QRect(0, top, test_frame.geometry().width(), test_frame.geometry().height()))
